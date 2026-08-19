@@ -25,6 +25,6 @@ def send_welcome(message):
     bot.reply_to(message, "O bot está online e funcionando!")
 
 keep_alive()
-bot.infinity_polling()
+bot.infinity_polling(skip_pending=True)
 
 
